@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="icon" type="image/x-icon" href="img/nike logo.jpg">
+    <title>Nike Store</title>
+    <style>
+        h1{
+            font-family: "Pacifico", cursive;
+
+        }
+        header {
+            background: url(img/281055.jpg) no-repeat center center;
+            background-size: cover;
+            min-height: 100vh;
+        }
+        .section {
+            padding: 4vw 0;
+        }
+        .tabs .indicator {
+            background-color: #1a237e;
+        }
+        .tabs .tab a:focus, .tabs .tab a:focus.active {
+            background: transparent;
+        }
+        @media screen and (max-width: 670px) {
+            header {
+                min-height: 250px;
+            }
+            .sidenav {
+                background-color: black;
+                color: white;
+            }
+            .sidenav a {
+                color: white;
+            }
+        }
+
+        .responsive-img:hover {
+            transform: scale(1.05);
+            transition: transform 0.3s;
+        }
+        .minimalist-btn {
+            background-color: transparent;
+            border: 1px solid black;
+            color: black;
+            padding: 10px 20px;
+            transition: background-color 0.3s, color 0.3s;
+        }
+        .minimalist-btn:hover {
+            background-color: black;
+            color: white;
+        }
+        .responsive-img:hover {
+            transform: scale(1.05);
+            transition: transform 0.3s;
+        }
+        .store-details {
+            display: none;
+            transition: all 0.3s ease-in-out;
+        }
+        
+        .store-details-btn:hover {
+             color: #ff9800; /* Gold color */
+            animation: pulse 1s infinite;
+        }
+        .facebook:hover{
+          transition: color .25s;
+          color: #0165e1 !important;
+        }
+        .twitter:hover{
+          transition: color .25s;
+          color: #1da1f2 !important;
+        }
+        .instagram:hover{
+          transition: background .25s, color .25s;
+          background: linear-gradient(300deg, #405de6, #c13584, #fd1d1d, #f77737) !important;
+                -webkit-background-clip: text !important;
+                background-clip: text;
+                color: transparent !important;
+        }
+        .youtube:hover{
+          transition: color .25s;
+          color: #ff0000 !important;
+        }
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+        .gold-star {
+            color: gold;
+        }
+.parallax-container {
+    min-height: 35px ;
+}
+    </style>
+</head>
+<body>
+
+<!-- Navbar -->
+<header>
+    <nav>
+        <div class="nav-wrapper white">
+            <div class="container">
+                <a href="#" class="brand-logo"><img src="img/nike logo.jpg" alt="Nike Logo" style="height: 50px;"></a>
+                <a href="#" class="sidenav-trigger" data-target="mobile-menu"><i class="material-icons black-text">menu</i></a>
+                <ul class="right hide-on-med-and-down">
+                    <li><a href="index.html" class="black-text">Home</a></li>
+                    <li><a href="#recommendation" class="black-text">Recommendation</a></li>
+                    <li><a href="Store.html" class="black-text">Store</a></li>
+                    <li><a href="login.html" class="black-text">Login</a></li>
+                    <li><a href="https://www.instagram.com/nike/" target="_blank" class="tooltipped btn-floating btn-small transparent" data-tooltip="Instagram">
+                        <i class="fab fa-instagram deep-orange"></i>
+                    </a></li>
+                    <li><a href="https://www.facebook.com/nike" target="_blank" class="tooltipped btn-floating btn-small" data-tooltip="Facebook">
+                        <i class="fab fa-facebook-f"></i>
+                    </a></li>
+                    <li><a href="https://twitter.com/nike" target="_blank" class="tooltipped btn-floating btn-small transparent" data-tooltip="Twitter">
+                        <i class="fab fa-twitter light-blue"></i>
+                    </a></li>
+                    <li><a href="www.nike.com/ph/official" target="_blank" class="tooltipped btn-floating btn-small" data-tooltip="Nike Store">
+                        <i class="material-icons black">local_mall</i>
+                    </a></li>
+                </ul>
+                <ul class="sidenav grey lighten-2 black-text" id="mobile-menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#recommendation">Recommendation</a></li>
+                    <li><a href="Store.html">Store</a></li>
+                    <li><a href="login.html">Login</a></li>
+                    <li><a href="https://www.instagram.com/nike/" target="_blank" class="tooltipped  transparent" data-tooltip="Instagram">
+                        <i class="fab fa-instagram"></i>
+                    </a></li>
+                    <li><a href="https://www.facebook.com/nike" target="_blank" class="tooltipped  transparent" data-tooltip="Facebook">
+                        <i class="fab fa-facebook-f"></i>
+                    </a></li>
+                    <li><a href="https://twitter.com/nike"" data-tooltip="Twitter">
+                        <i class="fab fa-twitter"></i>
+                    </a></li>
+                    <li><a href="www.nike.com/ph/official" data-tooltip="Twitter">
+                        <i class="material-icons">local_mall</i>
+                    </a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+
+<!-- Home Section -->
+<section class="container section scrollspy" id="home">
+    <h1 class="black-text">History of Nike</h1>
+    <p class="black-text">Nike, Inc. is an American multinational corporation that designs, manufactures, and markets footwear, apparel, equipment, and accessories. Founded in 1964 as Blue Ribbon Sports by Bill Bowerman and Phil Knight, it was renamed Nike in 1971.</p>
+
+    <!-- New Releases -->
+    <h2 class="black-text">New Upcoming Releases</h2>
+    <div class="row">
+        <!-- Men's New Release -->
+        <div class="col s12 m6">
+            <div class="card">
+                <div class="card-image">
+                    <img src="img/Shoe1.jpg" alt=""class="responsive-img materialboxed">
+                    <span class="card-title black-text">NOCTA x Nike Air Force 1 Low</span>
+                </div>
+                <div class="card-content">
+                    <p>Colorway: Palest Purple/Cobalt Tint/Metallic Silver</p>
+                    <p>Style #: CZ8065-500</p>
+                    <p>Release Date: December 11, 2024</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Women's New Release -->
+        <div class="col s12 m6">
+            <div class="card">
+                <div class="card-image">
+                    <img src="img/Shoe2.jpg" alt="" class="responsive-img materialboxed">
+                    <span class='card-title'>NOCTA x Nike Air Force 1 Low</span> 
+                </div> 
+                <div class='card-content'> 
+                    <p>Colorway: Palest Purple/Cobalt Tint/Metallic Silver</p> 
+                    <p>Style #: CZ8065-800</p> 
+                    <p>Release Date: December 11, 2024</p> 
+                </div> 
+            </div> 
+        </div> 
+    </div>
+</section>
+
+    
+    <div class="parallax-container">
+        <div class="parallax">
+            <img src="img/nike-air.jpg" class="responsive-img">
+        </div>
+        <br>
+        <br>
+     
+    </div>
+    <div class="container">
+        <h1 class="center scrollspy" id="recommendation">Recommend Shoes</h1>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col l4 m4 s12">
+                <div class="card sticky-action">
+                    <div class="card-image">
+                        <img src="img/Air Jordan Pure Platinum.jpg" class="responsive-img materialboxed">
+                       
+                        <a class="btn black btn-floating halfway-fab pulse activator">
+                            <i class="material-icons">add</i>
+                        </a>
+                    </div>
+                    
+                    <div class="card-content">
+                        <p>Air Jordan Pure Platinum</p>
+                    </div>
+                    
+                    <div class="card-reveal">
+                        <span class="card-title">Air Jordan Pure Platinum<i class="right">
+                            <i class="material-icons">close</i>
+                        </i></span>
+                        <p><strong>COLORWAY:</strong> Orchid/Neutral Grey/Black/White</p>
+                        <p><strong>STYLE #:</strong> AQ9129-501</p>
+                        <p><strong>RELEASE DATE:</strong> October 26, 2024</p>
+                    </div>
+
+                </div>
+            </div>
+            
+            
+            
+            <div class="col l4 m4 s12">
+                <div class="card sticky-action">
+                    <div class="card-image">
+                        <img src="img/Air Jordan 14 Retro Black Toe.jpg" class="responsive-img materialboxed">
+                        
+                        <a class="btn black btn-floating halfway-fab pulse activator">
+                            <i class="material-icons">add</i>
+                        </a>
+                    </div>
+                    <div class="card-content">
+                        <p>Air Jordan 14 Retro Black Toe</p>
+                    </div>
+                    
+                    <div class="card-reveal">
+                        <span class="card-title">Air Jordan 14 Retro Black Toe<i class="right">
+                            <i class="material-icons">close</i>
+                        </i></span>
+                        <p><strong>COLORWAY:</strong> White/Black-Varsity Red-Metallic Silver</p>
+                    <p><strong>STYLE #:</strong> 487471-160</p>
+                    <p><strong>RELEASE DATE:</strong> November 2, 2024</p>
+                    </div>
+                    
+                </div>
+            </div>
+            
+            <div class="col l4 m4 s12">
+                <div class="card sticky-action">
+                    <div class="card-image">
+                        <img src="img/Air Jordan 4 Orchid.jpg" class="responsive-img materialboxed">
+                        
+                        <a class="btn black btn-floating halfway-fab pulse activator">
+                            <i class="material-icons">add</i>
+                        </a>
+                    </div>
+                    
+                    <div class="card-content">
+                        <p>Air Jordan 4 Orchid</p>
+                    </div>
+                    <div class="card-reveal">
+                        <span class="card-title">Air Jordan 4 Orchid<i class="right">
+                            <i class="material-icons">close</i>
+                        </i></span>
+                        <p><strong>COLORWAY:</strong> Orchid/Neutral Grey/Black/White</p>
+                        <p><strong>STYLE #:</strong> AQ9129-501</p>
+                        <p><strong>RELEASE DATE:</strong> October 26, 2024</p>
+                    </div>
+                    
+                </div>
+            </div>
+            <div class="col l4 m4 s12">
+                <div class="card sticky-action">
+                    <div class="card-image">
+                        <img src="img/Air-Jordan-4-Fear-FQ8138-002-01.jpg" class="responsive-img materialboxed">
+                        
+                        <a class="btn black btn-floating halfway-fab pulse activator">
+                            <i class="material-icons">add</i>
+                        </a>
+                    </div>   
+                    <div class="card-content">
+                        <p>Air Jordan 4 Fear</p>
+                    </div>
+                    <div class="card-reveal">
+                        <span class="card-title">Air Jordan 4 Fear<i class="right">
+                            <i class="material-icons">close</i>
+                        </i></span>
+                        <p><strong>COLORWAY:</strong> Black/White-Cool Grey-Pure Platinum</p>
+                    <p><strong>STYLE #:</strong> FQ8138-002</p>
+                    <p><strong>RELEASE DATE:</strong> November 9, 2024</p>
+                    </div>
+                   
+                </div>
+            </div>
+            <div class="col l4 m4 s12">
+                <div class="card sticky-action">
+
+                    <div class="card-image">
+                        <img src="img/Nike Book 1 “Nightmare Before Christmas”.jpg" class="responsive-img materialboxed">
+                        
+                        <a class="btn black btn-floating halfway-fab pulse activator">
+                            <i class="material-icons">add</i>
+                        </a>
+                    </div>
+                    <div class="card-content">
+                        <p>Nike Book 1 </p>
+                    </div>
+                    
+                    <div class="card-reveal">
+                        <span class="card-title">Nike Book 1 “Nightmare Before Christmas”<i class="right">
+                            <i class="material-icons">close</i>
+                        </i></span>
+                        <p><strong>COLORWAY:</strong> White/Varsity Maize/Varsity Purple</p>
+                    <p><strong>STYLE #:</strong> FZ1151-100</p>
+                    <p><strong>RELEASE DATE:</strong> December 6, 2024 </p>
+                    </div>
+                    
+                </div>
+            </div>
+            <div class="col l4 m4 s12">
+                <div class="card sticky-action">
+
+                    <div class="card-image">
+                        <img src="img/Kobe-Bryant-x-Nike-Air-Force-1-Low-Lakers-Home-FZ1151-100-01.jpg" class=" responsive-img materialboxed">
+                        
+                        <a class="btn black btn-floating halfway-fab pulse activator">
+                            <i class="material-icons">add</i>
+                        </a>
+                    </div>
+                    <div class="card-content">
+                        <p>Kobe Bryant x Nike Air Force 1 Low </p>
+                    </div>
+                    
+                    <div class="card-reveal">
+                        <span class="card-title">Kobe Bryant x Nike Air Force 1 Low “Lakers Home”<i class="responsive-img right">
+                            <i class="material-icons">close</i>
+                        </i></span>
+                        <p><strong>COLORWAY:</strong> White/Varsity Maize/Varsity Purple</p>
+                    <p><strong>STYLE #:</strong> FZ1151-100</p>
+                    <p><strong>RELEASE DATE:</strong> December 6, 2024 </p>
+                    </div>
+                   
+                </div>
+            </div>
+        </div>
+       
+
+
+
+    </div>
+
+    
+
+    <!-- Ratings Section -->
+    <h3 class='black-text center'>Customer Ratings</h3>
+    <div class='row container'>
+        
+        <div class='col s12 m6'>
+            <p><i class="material-icons left">account_circle</i>John Doe - <span style="color: gold;">★★★★☆</span></p>
+            <p>"Great shoes! Very comfortable."</p>
+        </div>
+
+        <!-- Example Rating 2 -->
+        <div class='col s12 m6'>
+            <p><i class="material-icons left">account_circle</i>Jane Smith - <span style="color: gold;">★★★★★</span></p>
+            <p>"Absolutely love them! Worth every penny."</p>
+        </div>
+    </div>        
+    <footer class="page-footer grey darken-4">
+        <div class="container">
+          <div class="row">
+            <div class="col l6 s12">
+              <h5 class="white-text">Nike Shoes</h5>
+              <p class="grey-text text-lighten-4">Nike, Inc. is an American multinational corporation that designs, manufactures, and markets footwear, apparel, equipment, and accessories. Founded in 1964 as Blue Ribbon Sports by Bill Bowerman and Phil Knight, it was renamed Nike in 1971.</p>
+            </div>
+            <div class="col l4 offset-l2 s12">
+              <h5 class="white-text">Follow Us</h5>
+              <ul>
+                <li><a class="grey-text text-lighten-3 facebook" href="#"><i class="fab fa-facebook"></i> Facebook</a></li>
+                <li><a class="grey-text text-lighten-3 twitter" href="#"><i class="fab fa-twitter"></i> Twitter</a></li>
+                <li><a class="grey-text text-lighten-3 instagram" href="#"><i class="fab fa-instagram"></i> Instagram</a></li>
+                <li><a class="grey-text text-lighten-3 youtube" href="#"><i class="fab fa-youtube"></i> YouTube</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="footer-copyright black">
+          <div class="container center-align">&copy; References: Nike, Nice Kicks, Sneaker News
+          </div>
+        </div>
+      </footer>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+<script>
+// Initialize sidenav
+$(document).ready(function(){
+    $('.sidenav').sidenav();
+    $('.tooltipped').tooltip();
+    $('.scrollspy').scrollSpy();
+    $('.materialboxed').materialbox();
+    $('.parallax').parallax();
+});
+</script>
+
+</body>
+</html>
