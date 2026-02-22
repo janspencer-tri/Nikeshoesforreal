@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="icon" type="image/x-icon" href="img/nike logo.jpg">
+    <title>Nike Store in Rizal</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        h1 {
+            text-align: center;
+            margin-top: 20px;
+        }
+        .store-card {
+            margin: 20px 0;
+        }
+        .map-container {
+            margin: 20px 0;
+            height: 300px;
+        }
+        .facebook:hover{
+          transition: color .25s;
+          color: #0165e1 !important;
+        }
+        .twitter:hover{
+          transition: color .25s;
+          color: #1da1f2 !important;
+        }
+        .instagram:hover{
+          transition: background .25s, color .25s;
+          background: linear-gradient(300deg, #405de6, #c13584, #fd1d1d, #f77737) !important;
+                -webkit-background-clip: text !important;
+                background-clip: text;
+                color: transparent !important;
+        }
+        .youtube:hover{
+          transition: color .25s;
+          color: #ff0000 !important;
+        }
+
+    </style>
+</head>
+<body>
+
+<!-- Navbar -->
+<header>
+    <nav>
+        <div class="nav-wrapper white">
+            <div class="container">
+                <a href="#" class="brand-logo"><img src="img/nike logo.jpg" alt="Nike Logo" style="height: 50px;"></a>
+                <a href="#" class="sidenav-trigger" data-target="mobile-menu"><i class="material-icons black-text">menu</i></a>
+                <ul class="right hide-on-med-and-down">
+                    <li><a href="index.html" class="black-text">Home</a></li>
+                    <li><a href="login.html" class="black-text">Login</a></li>
+                    <li><a href="https://www.instagram.com/nike/" target="_blank" class="tooltipped btn-floating btn-small transparent" data-tooltip="Instagram">
+                        <i class="fab fa-instagram deep-orange"></i>
+                    </a></li>
+                    <li><a href="https://www.facebook.com/nike" target="_blank" class="tooltipped btn-floating btn-small" data-tooltip="Facebook">
+                        <i class="fab fa-facebook-f"></i>
+                    </a></li>
+                    <li><a href="https://twitter.com/nike" target="_blank" class="tooltipped btn-floating btn-small transparent" data-tooltip="Twitter">
+                        <i class="fab fa-twitter light-blue"></i>
+                    </a></li>
+                    <li><a href="www.nike.com/ph/official" target="_blank" class="tooltipped btn-floating btn-small" data-tooltip="Nike Store">
+                        <i class="material-icons black">local_mall</i>
+                    </a></li>
+                </ul>
+                <ul class="sidenav grey lighten-2 black-text" id="mobile-menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="login.html">Login</a></li>
+                    <li><a href="https://www.instagram.com/nike/" target="_blank" class="tooltipped  transparent" data-tooltip="Instagram">
+                        <i class="fab fa-instagram"></i>
+                    </a></li>
+                    <li><a href="https://www.facebook.com/nike" target="_blank" class="tooltipped  transparent" data-tooltip="Facebook">
+                        <i class="fab fa-facebook-f"></i>
+                    </a></li>
+                    <li><a href="https://twitter.com/nike"" data-tooltip="Twitter">
+                        <i class="fab fa-twitter"></i>
+                    </a></li>
+                    <li><a href="www.nike.com/ph/official" data-tooltip="Twitter">
+                        <i class="material-icons">local_mall</i>
+                    </a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+<!-- Store Section -->
+<section id="store" class="container section scrollspy">
+    <h1 class="black-text">Nearby Stores</h1>
+
+    <!-- Store Card -->
+    <div class="card store-card">
+        <div class="card-image">
+            <img src="img/Robinsons-Galleria-Exterior.jpg" alt="Store Image" class="responsive-img">
+        </div>
+        <div class="card-content">
+            <span class="card-title">Nike Galleria</span>
+            <p>Address: Address: Quezon City</p>
+            <p>Open: 9:00 AM | Close: 9:00 PM</p>
+        </div>
+        <div class="card-action">
+            <a href="#" target="_blank"><i class="fas fa-map-marker-alt"></i> View on Google Maps</a>
+        </div>
+    </div>
+    <div class="map-container">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.123456789012!2d121.059123!3d14.600123!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x33b9e8b8abcdef%3A0xabcdef1234567890!2sRobinson%20Galleria%20Nike%20Store!5e0!3m2!1sen!2sph!4v1612345678901" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    </div>
+    <div class="card store-card">
+        <div class="card-image">
+            <img src="img/Rob Mall Antips.jpg" alt="Store Image" class="responsive-img">
+        </div>
+        <div class="card-content">
+            <span class="card-title">Nike Store Robinson Antipolo</span>
+            <p>Address: Antipolo, Rizal</p>
+            <p>Open: 9:00 AM | Close: 9:00 PM</p>
+        </div>
+        <div class="card-action">
+            <a href="#" target="_blank"><i class="fas fa-map-marker-alt"></i> View on Google Maps</a>
+        </div>
+    </div>
+    <div class="map-container">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.123456789012!2d121.119123!3d14.578123!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x33b9e8b8abcdef%3A0xabcdef1234567890!2sRobinson%20Antipolo%20Nike%20Store!5e0!3m2!1sen!2sph!4v1612345678901" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>      
+    </div>
+    <div class="card store-card">
+        <div class="card-image">
+            <img src="img/image.jpg" alt="Store Image" class="responsive-img">
+        </div>
+        <div class="card-content">
+            <span class="card-title">Nike The Fort</span>
+            <p>Address: 123 Nike Ave, Rizal, 12345</p>
+            <p>Open: 10:00 AM | 9:00 PM</p>
+        </div>
+        <div class="card-action">
+            <a href="#" target="_blank"><i class="fas fa-map-marker-alt"></i> View on Google Maps</a>
+        </div>
+    <div class="map-container">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.123456789012!2d121.058123!3d14.550123!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x33b9e8b8abcdef%3A0xabcdef1234567890!2sNike%20The%20Fort%20Store!5e0!3m2!1sen!2sph!4v1612345678901" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    </div>
+
+
+</section>
+<footer class="page-footer grey darken-4">
+    <div class="container">
+      <div class="row">
+        <div class="col l6 s12">
+          <h5 class="white-text">Nike Shoes</h5>
+          <p class="grey-text text-lighten-4">Nike, Inc. is an American multinational corporation that designs, manufactures, and markets footwear, apparel, equipment, and accessories. Founded in 1964 as Blue Ribbon Sports by Bill Bowerman and Phil Knight, it was renamed Nike in 1971.</p>
+        </div>
+        <div class="col l4 offset-l2 s12">
+          <h5 class="white-text">Follow Us</h5>
+          <ul>
+            <li><a class="grey-text text-lighten-3 facebook" href="#"><i class="fab fa-facebook"></i> Facebook</a></li>
+            <li><a class="grey-text text-lighten-3 twitter" href="#"><i class="fab fa-twitter"></i> Twitter</a></li>
+            <li><a class="grey-text text-lighten-3 instagram" href="#"><i class="fab fa-instagram"></i> Instagram</a></li>
+            <li><a class="grey-text text-lighten-3 youtube" href="#"><i class="fab fa-youtube"></i> YouTube</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer-copyright black">
+      <div class="container center-align">&copy; References: Nike, Nice Kicks, Sneaker News
+      </div>
+    </div>
+  </footer>
+
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+<script>
+// Initialize sidenav
+$(document).ready(function(){
+    $('.sidenav').sidenav();
+    $('.tooltipped').tooltip();
+    $('.scrollspy').scrollSpy();
+    $('.materialboxed').materialbox();
+    $('.parallax').parallax();
+});
+</script>
+
+</body>
+</html>
